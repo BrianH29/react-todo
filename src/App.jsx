@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header';
 import InputTodo from "./components/InputTodo";
+import ListTodo from "./components/ListTodo";
 
 function App() {
     const [todoList, setTodoList] = useState([]);
@@ -12,7 +13,8 @@ function App() {
   return (
     <div>
       <Header />
-        <InputTodo handleClick={handleClick}/>
+        <InputTodo childPropFn={handleClick}/>
+        <ListTodo todoList={todoList}/>
     </div>
   )
 }
