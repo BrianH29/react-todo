@@ -1,18 +1,15 @@
 import '../css/InputTodo.css'
 import {useState} from 'react';
 
-function InputTodo({handleClick}){
+function InputTodo({childPropFn}){
     const [todo, setTodo] = useState('');
-    const [todos, setTodos] = useState([]);
     const onChange = (e) => setTodo(e.target.value);
     const onSubmit = (e) =>  {
         e.preventDefault();
         if(todo === '') return;
-        handleClick(todo);
+        childPropFn(todo);
         setTodo('');
-        // setTodos(curr => [todo, ...curr])
     }
-    console.log(`input : ${todo}`)
 
     return(
         <form className="input-todo d-flex d-center" onSubmit={onSubmit}>
