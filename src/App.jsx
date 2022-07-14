@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header';
 import InputTodo from "./components/InputTodo";
 import ListTodo from "./components/ListTodo";
+import './css/main.css'
 
 function App() {
     const [todoList, setTodoList] = useState([]);

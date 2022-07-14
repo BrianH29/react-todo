@@ -1,5 +1,4 @@
 import '../css/Header.css'
-import '../css/main.css'
 
 function Header(){
     return (

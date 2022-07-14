@@ -1,5 +1,5 @@
 import '../css/InputTodo.css'
-import {useState} from 'react';
+import { useState } from 'react';
 
 function InputTodo({childPropFn}){
     const [todo, setTodo] = useState('');
