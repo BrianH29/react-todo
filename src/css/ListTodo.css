@@ -7,7 +7,7 @@
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font: 14px/20px "Open Sans", Arial, sans-serif;
     cursor: pointer;
     -webkit-user-select: none;
@@ -21,9 +21,7 @@
     border: 1px solid #343a3f;
     box-shadow: 2px 1px 0 #343a3f;
 }
-.checkbox-circle input[type="checkbox"] + label:last-child {
-    margin-bottom: 0;
-}
+
 .checkbox-circle input[type="checkbox"] + label:before {
     content: "";
     display: block;

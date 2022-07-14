@@ -11,11 +11,16 @@ function InputTodo({childPropFn}){
         setTodo('');
     }
 
+    const onKeyDown = (e) => {
+        if(e.key === 'Enter') {
+            onSubmit(e);
+        }
+    }
     return(
-        <form className="input-todo d-flex d-center" onSubmit={onSubmit}>
+        <form className="input-todo d-flex d-center" onKeyDown={onKeyDown}>
             <input type="text" placeholder="What are you up to?" onChange={onChange} value={todo}/>
-            <button>todo</button>
         </form>
+
     )
 }
 

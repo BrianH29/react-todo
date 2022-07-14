@@ -1,12 +1,15 @@
 import '../css/ListTodo.css';
 
 export default function ListTodo({todoList}){
+    const onClick = (e) => {
+        console.log('its on click ', e)
+    }
     return (
         <ul>
             {
                 todoList.map((item, idx) =>
                     <li key={idx} className="checkbox-circle">
-                        <input type="checkbox" id={item} value={item}/>
+                        <input type="checkbox" id={item} value={item} onClick={onClick}/>
                         <label htmlFor={item}>{item}</label>
                     </li> )
             }
@@ -14,10 +17,3 @@ export default function ListTodo({todoList}){
     )
 }
 
-// <div className="item">
-//     <div className="checkbox-circle2">
-//         <input type="checkbox" id="checkbox-circle" name="check">
-//             <label htmlFor="checkbox-circle">Check one</label>
-//     </div>
-// </div>
-// https://alvarotrigo.com/blog/css-checkbox-styles/
