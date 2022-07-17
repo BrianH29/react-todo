@@ -1,4 +1,6 @@
-
+.list-container{
+    padding: 30px;
+}
 /* checkbox-circle */
 .checkbox-circle input[type="checkbox"] {
     display: none;

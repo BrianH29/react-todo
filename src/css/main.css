@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.d-between {
+    justify-content: space-between;
+}
+
 ul{
     list-style-type: none;
 }
