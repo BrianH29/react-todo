@@ -46,4 +46,9 @@
     height: 1.15em;
     background: #50565a;
     box-shadow: 2px 1px 0 #50565a;
+    text-decoration: line-through;
+}
+
+.completed {
+    text-decoration: line-through;
 }

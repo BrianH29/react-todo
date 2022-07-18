@@ -7,10 +7,12 @@ import './css/reset.css'
 
 function App() {
     const [todoList, setTodoList] = useState([]);
-    const handleClick = (todo) => setTodoList(curr => [todo, ...curr]);
+    const handleClick = (todo) => {
+        setTodoList(curr => [{todo : todo, completed : false}, ...curr]);
+        console.log(todoList);
+    }
     const deleteTodo = (todo) => {
-        console.log('app.jsx todod : ', todo)
-        const refreshList = todoList.filter(item => item !== todo);
+        let refreshList = todoList.filter(item => item.todo !== todo);
         setTodoList(refreshList)
 
     }
